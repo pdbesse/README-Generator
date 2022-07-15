@@ -57,14 +57,15 @@ function getInfo () {
             type: "input",
         },
 ])
-    .then((response) => {
-        console.log(response);
+    .then((info) => {
+        //console.log(info);
+        writeToFile("gen-README/README.md",  info);
     })
 }
 
 // function to write README.md
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.error(err) : console.log('Generating README.md...'));
+    fs.writeFile(fileName, utils(data), (err) => err ? console.error(err) : console.log('Generating README.md...'));
 }
 
 // function call to initialize app
