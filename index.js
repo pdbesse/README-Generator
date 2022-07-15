@@ -1,6 +1,8 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const utils = require('./utils/generateMarkdown');
 
+// function to prompt user for information
 function getInfo () {
     inquirer.prompt([
         {
@@ -55,13 +57,16 @@ function getInfo () {
             type: "input",
         },
 ])
-    .then((response) => {
-        console.log(response);
+    .then((info) => {
+        //console.log(info);
+        writeToFile("gen-README/README.md",  info);
     })
 }
 
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+// function to write README.md
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, utils(data), (err) => err ? console.error(err) : console.log('Generating README.md...'));
+}
 
-// Function call to initialize app
+// function call to initialize app
 getInfo();
