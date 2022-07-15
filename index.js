@@ -44,16 +44,11 @@ function getInfo () {
             name: "license",
             message: "What license would you like to use for your project?",
             type: "rawlist",
-            choices: ["Apache", "MIT", "GNU"]
+            choices: ["Apache", "MIT", "GPLv3"]
         },
         {
             name: "test",
             message: "How can your project be tested?",
-            type: "input",
-        },
-        {
-            name: "questions",
-            message: "How can one ask questions about your project?",
             type: "input",
         },
 ])
