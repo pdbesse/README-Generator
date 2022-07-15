@@ -1,7 +1,3 @@
-var licenseBadge = "";
-var licenseLink = "";
-// var licenseSection = "";
-
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
@@ -28,7 +24,7 @@ function renderLicenseLink(data) {
 
 function renderLicenseDescr(data) {
   if (data.license == "MIT") {
-    licenseDescr =mitDescr;
+    licenseDescr = mitDescr;
   } else if (data.license === "Apache") {
     licenseDescr = apacheDescr;
   } else {
@@ -41,6 +37,7 @@ function generateMarkdown(data) {
   renderLicenseBadge(data);
   renderLicenseLink(data);
   renderLicenseDescr(data);
+  
   return `![License: ${data.license}](${licenseBadge})
 # ${data.title} 
 ## Description
@@ -59,7 +56,8 @@ ${data.usage}
 ## Contributing
 ${data.contribution}
 ## License 
-This app is licensed under the ${data.license} license. You can view license information [here](${licenseLink}).
+This app is licensed under ![License: ${data.license}](${licenseBadge}.
+You can view license documentation ![here](${licenseLink}).
 ${licenseDescr}
 ## Testing
 ${data.test}
@@ -68,9 +66,9 @@ If you have any questions about this app, please email me at ${data.email}. Visi
 `;
 }
 
-var mitDescr = "";
-var apacheDescr = "   Copyright [yyyy] [name of copyright owner] Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.";
-var gnuDescr = "";
+// var mitDescr = "";
+// var apacheDescr = `Copyright ${data.year} ${data.name} Licensed under the Apache License, Version 2.0 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.`;
+// var gnuDescr = "";
 
 
 module.exports = generateMarkdown;

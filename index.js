@@ -47,6 +47,16 @@ function getInfo () {
             choices: ["Apache", "MIT", "GPLv3"]
         },
         {
+            name: "year",
+            message: "In what year was your project made?",
+            type: "input",
+        },
+        {
+            name: "name",
+            message: "What is your full name?",
+            type: "input",
+        },
+        {
             name: "test",
             message: "How can your project be tested?",
             type: "input",
