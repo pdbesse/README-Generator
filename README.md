@@ -2,11 +2,8 @@
 
 ## Description
 
-This app is a node.js program designed to create a professional README from various user prompts. Upon running the index.js file, the user is prompted to enter their name, email, GitHub username, project title, project description, installation instructions, usage instructions, contribution guidelines, choice of license, the year the project was made, and testing instructions.
+This app is a node.js program designed to create a professional README from various user prompts. 
 
-After answering all the prompts, a README.md is generated in ./gen-README.
-
-[README-Generator](https://pdbesse.github.io/README-Generator/)
 
 ## Table of Contents
 
@@ -19,11 +16,13 @@ After answering all the prompts, a README.md is generated in ./gen-README.
 
 ## Installation
 
-The website has been installed and deployed on [Github](https://github.com/).
+
 
 ## Usage
 
-The user is presented an empty search box. The user enters a city name and clicks "search." The user is then presented with current weather conditions (an icon representing the weather, the temperature, wind speed, humidity, and a color-coded UV index). The user is also presented with a future five-day forecast (the date, an icon representing the weather, the temperature, and humidity). Searched cities are saved in a box below the search input, and by clicking on a past city, the weather conditions for that city will refresh.
+Upon running the index.js file in node, the user is prompted to enter their name, email, GitHub username, project title, project description, installation instructions, usage instructions, contribution guidelines, choice of license, the year the project was made, and testing instructions.
+
+After answering all the prompts, a README.md is generated in ./gen-README.
 
 ## Code Snippets
 
