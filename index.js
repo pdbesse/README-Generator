@@ -1,10 +1,19 @@
+// use inquirer module
 const inquirer = require('inquirer');
+// use file system module
 const fs = require('fs');
+// use generateMarkdown() from ./utils
 const utils = require('./utils/generateMarkdown');
 
 // function to prompt user for information
 function getInfo () {
+    // inquirer prompts the user with the following options:
     inquirer.prompt([
+        {
+            name: "name",
+            message: "What is your full name?",
+            type: "input",
+        },
         {
             name: "email",
             message: "What is your email address?",
@@ -52,26 +61,24 @@ function getInfo () {
             type: "input",
         },
         {
-            name: "name",
-            message: "What is your full name?",
-            type: "input",
-        },
-        {
             name: "test",
             message: "How can your project be tested?",
             type: "input",
         },
 ])
+    // once the information has been collected, write the info to the file "gen-README/README.md"
     .then((info) => {
-        //console.log(info);
         writeToFile("gen-README/README.md",  info);
     })
 }
 
 // function to write README.md
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, utils(data), (err) => err ? console.error(err) : console.log('Generating README.md...'));
+    // writes the README.md using generateMarkdown() located in ./utils
+    // if there is an error, display the error on the console
+    // if no error, log "README Generated!" in the console
+    fs.writeFile(fileName, utils(data), (err) => err ? console.error(err) : console.log('README Generated!'));
 }
 
-// function call to initialize app
+// function to initialize app
 getInfo();
