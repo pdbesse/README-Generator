@@ -1,6 +1,6 @@
 // use inquirer module
 const inquirer = require('inquirer');
-// use file system module
+// use file system package
 const fs = require('fs');
 // use generateMarkdown() from ./utils
 const utils = require('./utils/generateMarkdown');
