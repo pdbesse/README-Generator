@@ -16,9 +16,23 @@ This app is a node.js program designed to create a professional README from vari
 
 ## Installation
 
+The files for this program can be downloaded [here](https://github.com/pdbesse/README-Generator/archive/refs/heads/main.zip). 
 
+This app requires node.js to be installed. For download and installation instructions, please see [nodejs.org](https://nodejs.org/en/download/).
+
+This app also requires Inquirer to be installed. To do this, open the terminal and navigate to the extracted folder. Open terminal in the folder and enter 
+```
+npm i inquirer@8.2.4
+```
+After inquirer has installed, enter
+```
+node index.js
+```
+This will launch the program.
 
 ## Usage
+
+![usage-gif](./media/README-generator-demo.gif)
 
 Upon running the index.js file in node, the user is prompted to enter their name, email, GitHub username, project title, project description, installation instructions, usage instructions, contribution guidelines, choice of license, the year the project was made, and testing instructions.
 

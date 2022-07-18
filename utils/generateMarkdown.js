@@ -63,7 +63,7 @@ function renderLicenseDescr(data) {
   }
 }
 
-// TODO: Create a function to generate markdown for README
+// function to generate markdown
 function generateMarkdown(data) {
   // run the following three functions 
   renderLicenseBadge(data);
