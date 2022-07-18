@@ -20,11 +20,11 @@ The files for this program can be downloaded [here](https://github.com/pdbesse/R
 
 This app requires node.js to be installed. For download and installation instructions, please see [nodejs.org](https://nodejs.org/en/download/).
 
-This app also requires Inquirer to be installed. To do this, open the terminal and navigate to the extracted folder. Open terminal in the folder and enter 
+This app also requires Inquirer to be installed. To do this, open the terminal and navigate to the extracted folder. Open terminal in the folder and enter: 
 ```
-npm i inquirer@8.2.4
+npm install
 ```
-After inquirer has installed, enter
+This will download any modules required for the app to work. Still in the console, enter:
 ```
 node index.js
 ```
