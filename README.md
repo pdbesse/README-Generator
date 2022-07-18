@@ -38,6 +38,8 @@ Upon running the index.js file in node, the user is prompted to enter their name
 
 After answering all the prompts, a README.md is generated in ./gen-README.
 
+You may view a video of the application being used [here](https://youtu.be/lcHL6DFO1Iw).
+
 ## Code Snippets
 
 ```javascript
