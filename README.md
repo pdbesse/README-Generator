@@ -188,7 +188,7 @@ Technology Used:
 
 ## Credits
 
-All coding credited to Phillip Besse.  Javascript pseudocoded with tutor Joe Young.
+All coding credited to Phillip Besse.  Javascript debugged with Kavya Mandla and Kevin Hernandez.
 
 Websites Referenced:
 * [Educative.io - Inquirer](https://www.educative.io/answers/how-to-use-the-inquirer-node-package)
